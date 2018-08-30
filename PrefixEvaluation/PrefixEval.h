@@ -10,12 +10,12 @@ class PrefixEval
 {
 private :
 	const char operators[4] = { '+','-','*','/' };
-	bool isOperator(char ch);
+	bool isOperator(char& ch);
 
 public:
 	PrefixEval();
-	int endPre(std::string strExp, int first);
-	bool isPrefix(std::string strExp);
+	int endPre(std::string& strExp, int first);
+	bool isPrefix(std::string& strExp);
 	float evaluatePrefix(std::string strExp);
 	
 

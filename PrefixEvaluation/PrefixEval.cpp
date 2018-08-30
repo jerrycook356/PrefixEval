@@ -11,7 +11,7 @@ PrefixEval::PrefixEval()
 of the string contains no blanks
 @post returns the index of the last character in the prefix expression that begins
 at index first of strEXp, or -1 if no such prefix expression exists*/
-int PrefixEval::endPre(std::string strExp, int first)
+int PrefixEval::endPre(std::string& strExp, int first)
 {
 	int last = strExp.length() - 1;
 	if (first < 0 || first > last)
@@ -27,7 +27,8 @@ int PrefixEval::endPre(std::string strExp, int first)
 		//of the second prefix position
 		if (endPos > -1)
 		{
-			return endPre(strExp, endPos + 1); //point y
+			
+			return endPre(strExp, endPos+1); //point y
 		}
 		else
 			return -1;
@@ -40,7 +41,7 @@ int PrefixEval::endPre(std::string strExp, int first)
 /**sees whether an expressoin is a prefix expression
 @pre strExp contains a string with no blank characters
 @post returns true if the expression is in prefix form, otherwise false*/
-bool PrefixEval::isPrefix(std::string strExp)
+bool PrefixEval::isPrefix(std::string& strExp)
 {
 	char lastChar = endPre(strExp, 0);
 	return ((lastChar >= 0) && (lastChar == strExp.length() - 1));
@@ -90,7 +91,7 @@ float PrefixEval::evaluatePrefix(std::string strExp)
 
 }//end evaluatePrefix
 
-bool PrefixEval::isOperator(char ch)
+bool PrefixEval::isOperator(char& ch)
 {
 	int size = sizeof(operators) / sizeof(operators[0]);
 	for (int i = 0; i < size;i++)

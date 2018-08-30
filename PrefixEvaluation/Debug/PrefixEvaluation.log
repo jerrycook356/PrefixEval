@@ -1,6 +1,6 @@
 ﻿  PrefixEval.cpp
-c:\users\jerry\source\repos\prefixevaluation\prefixevaluation\prefixeval.cpp(58): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+c:\users\jerry\source\repos\prefixevaluation\prefixevaluation\prefixeval.cpp(59): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
   PrefixEvaluation.cpp
   Generating Code...
-c:\users\jerry\source\repos\prefixevaluation\prefixevaluation\prefixeval.cpp(91): warning C4715: 'PrefixEval::evaluatePrefix': not all control paths return a value
+c:\users\jerry\source\repos\prefixevaluation\prefixevaluation\prefixeval.cpp(92): warning C4715: 'PrefixEval::evaluatePrefix': not all control paths return a value
   PrefixEvaluation.vcxproj -> C:\Users\jerry\source\repos\PrefixEvaluation\Debug\PrefixEvaluation.exe
